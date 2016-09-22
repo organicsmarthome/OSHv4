@@ -11,13 +11,13 @@ The building energy management system is based on the Extended Observer/Controll
 
 The aim is a mostly self-organized system reducing the need for interaction between the users (e.g., occupants) and the building's devices and systems (e.g., appliances, distributed generation, and building energy management system). However, the system still allows for explicit interference--if desired-- and the users remain always in the loop.
 
-------------------------
+
 ## Technical Information
 
 * Java 8
 * Eclipse Mars+
 
--------------
+
 ## Literature
 
 For further information, please consult the following literature:
@@ -31,13 +31,13 @@ http://dl.acm.org/citation.cfm?id=1998654
 by Florian Allerding, KIT Scientific Publishing. 
 http://www.ksp.kit.edu/9783731501817
 
-----------
+
 ## License
 
 The Organic Smart Home is licensed under the GPL. 
 
 If you have licensed this product under the GPL, please see the COPYING file for more information and the exact version of GPL. 
--------------------
+
 ## Project Overview
 
 * TODO
