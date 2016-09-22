@@ -18,6 +18,19 @@ The aim is a mostly self-organized system reducing the need for interaction betw
 * Eclipse Mars+
 
 
+## Project Overview
+
+* TODO
+
+
+## Contact and Main Contributors
+
+* Kaibin Bao (kaibin.bao@kit.edu)
+* Sebastian Kramer
+* Ingo Mauser (ingo.mauser@kit.edu) - Main contact
+* Jan Müller (jan.mueller@kit.edu)
+
+
 ## Literature
 
 For further information, please consult the following publications:
@@ -44,6 +57,4 @@ The Organic Smart Home is licensed under the GPL.
 
 If you have licensed this product under the GPL, please see the COPYING file for more information and the GPL version. 
 
-## Project Overview
 
-* TODO
