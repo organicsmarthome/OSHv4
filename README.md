@@ -9,7 +9,7 @@ This framework was developed in response to the challenge of balancing supply an
 
 The building energy management system is based on the Extended Observer/Controller (O/C) architecture, which has been developed within the German priority research program on [Organic Computing](http://www.organic-computing.de) (DFG-Schwerpunktprogramm 1183).
 
-It aims at the realization of a mostly self-organizing and automated energy management system, reducing the need for interaction between the users (e.g., occupants) and the building's devices and systems (e.g., appliances, distributed generation, and building energy management system). However, the system still allows for explicit interference--if desired-- and the users remain always in the loop.
+It aims at realizing a mostly self-organizing and automated energy management system, reducing the need for interaction between the users (e.g., occupants) and the building's devices and systems (e.g., appliances, distributed generation, and building energy management system). However, the system still allows for explicit interference--if desired--and the users remain always in the loop.
 
 
 ## Technical Information
@@ -25,9 +25,10 @@ It aims at the realization of a mostly self-organizing and automated energy mana
 
 ## Contact and Main Contributors
 
-* Kaibin Bao (kaibin.bao@kit.edu)
+* Kaibin Bao (bao@kit.edu)
+* Sebastian Kochanneck (kochanneck@kit.edu)
 * Sebastian Kramer
-* Ingo Mauser (ingo.mauser@kit.edu) - Main contact
+* Ingo Mauser (mauser@kit.edu) - Main contact
 * Jan Müller (jan.mueller@kit.edu)
 
 
