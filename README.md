@@ -42,5 +42,5 @@ If you have licensed this product under the GPL, please see the COPYING file for
 
 * TODO
 
-    [Organic Smart Home]: <http://www.organicsmarthome.com/>
-    [Organic Computing]: <http://www.organic-computing.de/>
+   [Organic Smart Home]: <http://www.organicsmarthome.com/>
+   [Organic Computing]: <http://www.organic-computing.de/>
