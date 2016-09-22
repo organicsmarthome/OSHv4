@@ -20,16 +20,22 @@ The aim is a mostly self-organized system reducing the need for interaction betw
 
 ## Literature
 
-For further information, please consult the following literature:
+For further information, please consult the following publications:
 
-"Organic Smart Home - Architecture for Energy Management in Intelligent Buildings"
-by Florian Allerding and Hartmut Schmeck in Proceedings of the 2011 workshop
-on Organic computing. 
+Florian Allerding, Hartmut Schmeck:
+"Organic Smart Home - Architecture for Energy Management in Intelligent Buildings",
+Proceedings of the 2011 workshop on Organic computing, 2011. 
 http://dl.acm.org/citation.cfm?id=1998654
 
+Florian Allerding:
 "Organic Smart Home - Energiemanagement für Intelligente Gebäude"
-by Florian Allerding, KIT Scientific Publishing. 
+KIT Scientific Publishing, 2013. 
 http://www.ksp.kit.edu/9783731501817
+
+Ingo Mauser, Jan Müller, Florian Allerding, Hartmut Schmeck:
+"Adaptive Building Energy Management with Multiple Commodities and Flexible Evolutionary Optimization"
+Renewable Energy, 87, Part 2, p.911-921, 2016.
+http://www.sciencedirect.com/science/article/pii/S0960148115302834
 
 
 ## License
