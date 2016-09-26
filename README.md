@@ -21,10 +21,24 @@ It aims at realizing a mostly self-organizing and automated energy management sy
 ## Overview
 
 * <b>source</b> : source code of the Organic Smart Home
+
 * <b>source/osh_sim_builder</b> : OSH tools for the generation of XML configuration files (simulation mode) 
   * <code>constructSimulationPackage</code> : OSH configuration file generator
 * <b>source/osh_sim_loader</b> : OSH in simulation mode
   * <code>runSimulationPackage</code> : OSH simulation launcher (simulation mode)
+  
+* <b>source/osh_core</b> : core components of the OSH (e.g. generic components of the Observer/Controller architecture, Communication Registries, Energy Simulation Core)
+
+* <b>source/osh_ems_ea</b> : components of the optimization layer (based on [jMetal 4.x](https://github.com/jMetal/jMetal))
+
+* <b>source/osh_busdriver*</b> : bus drivers (Miele XGW2000 gateway, BacNet, EnOcean, WAGO 750-820*)
+
+* <b>source/osh_comdriver*</b> : communication drivers (user interaction, logging, REST service, external signals, weather prediction)
+
+* <b>source/osh_driver*</b> : device drivers (home appliances, baseload, battery storage, microCHP, HVAC, PV system, smart meter)
+
+* <b>source/xbin_lib</b> : required libraries (not provided, please see README for list of libraries)
+
 
 ## Contact and Main Contributors
 
@@ -58,7 +72,6 @@ http://www.sciencedirect.com/science/article/pii/S0960148115302834
 ## Citing
 
 If you use the Organic Smart Home in your research, please consider citing:
-
 <pre><code>
 @Article{mauser2016adaptive,
   Title                    = {{Adaptive Building Energy Management with Multiple Commodities and Flexible Evolutionary Optimization}},
