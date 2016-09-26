@@ -84,6 +84,6 @@ If you use the Organic Smart Home in your research, please consider citing:
 
 The Organic Smart Home is licensed under the GPL. 
 
-If you have licensed this product under the GPL, please see the COPYING file for more information and the GPL version. 
+If you have licensed this product under the GPL, please see the LICENSE file for more information and the GPL version. 
 
 
