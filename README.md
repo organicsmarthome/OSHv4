@@ -86,4 +86,4 @@ The Organic Smart Home is licensed under the GPL.
 
 If you have licensed this product under the GPL, please see the LICENSE file for more information and the GPL version. 
 
-
+The adapted version of jMetal is licensed under the LGPL as the original version of jMetal 4.5.
