@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://osh/configuration/core"
+	xmlns:tns="http://osh/configuration/system" 
+	xmlns:tns2="http://osh/configuration/core"
+	elementFormDefault="qualified">
+	
+	<import namespace="http://osh/configuration/system" schemaLocation="includes/ConfigurationParameter.xsd"></import>
+
+
+	<complexType name="GAConfiguration">
+		<sequence>
+			<element name="numEvaluations" type="int"></element>
+			<element name="popSize" type="int"></element>
+			<element name="crossoverOperator" type="string"></element>
+			<element name="mutationOperator" type="string"></element>
+			<element name="selectionOperator" type="string"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="crossoverParameters"
+				type="tns:ConfigurationParameter"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="mutationParameters"
+				type="tns:ConfigurationParameter"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="selectionParameters"
+				type="tns:ConfigurationParameter"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="stoppingRules"
+				type="tns2:StoppingRule"></element>
+		</sequence>
+	</complexType>
+
+
+	<complexType name="StoppingRule">
+		<sequence>
+			<element name="stoppingRuleName" type="string"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="ruleParameters"
+				type="tns:ConfigurationParameter"></element>
+		</sequence>
+	</complexType>
+
+</schema>

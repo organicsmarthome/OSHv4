@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://osh/Energy/Grid/Configuration" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://osh/Energy/Grid/Configuration">
+
+
+	<complexType name="LayoutConnection">
+		<sequence>
+			<element name="activeEntityUUID" type="string"></element>
+			<element name="passiveEntityUUID" type="string"></element>
+			<element name="activeToPassiveCommodity" type="string"></element>
+			<element name="passiveToActiveCommodity" type="string"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="devicePerMeter">
+		<sequence>
+			<element name="meterUUID" type="string"></element>
+			<element name="deviceUUID" type="string"></element>
+			<element name="deviceType" type="string"></element>
+		</sequence>
+	</complexType>
+	
+	
+	<element name="GridLayout">
+		<complexType>
+			<sequence>
+				<element minOccurs="0" maxOccurs="unbounded" name="connections" type="tns:LayoutConnection"></element>
+				<element minOccurs="0" maxOccurs="unbounded" name="meterUUIDs" type="string"></element>
+				<element minOccurs="0" maxOccurs="unbounded" name="deviceMeterMap" type="tns:devicePerMeter"></element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

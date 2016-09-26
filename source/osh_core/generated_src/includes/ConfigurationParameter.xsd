@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://osh/configuration/system"
+	xmlns:tns="http://osh/configuration/system"
+	elementFormDefault="qualified">
+	
+	<complexType name="ConfigurationParameter">
+		<sequence>
+			<element name="parameterName" type="string"></element>
+			<element name="parameterValue" type="string"></element>
+			<element name="parameterType" type="string"></element>
+		</sequence>
+	</complexType>
+</schema>

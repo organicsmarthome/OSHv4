@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_comdriver_gui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_comdriver_signals"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_appliance"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_baseload"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_en50523"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_chp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_hvac_heater_ihe"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_ems_ea"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_pv"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_batterystorage"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_busdriver_appliance_mielegateway"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_busdriver_automation_bacnet"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_busdriver_automation_wago"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_comdriver_dof"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_comdriver_logger"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_comdriver_restservice"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_appliance_miele"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_hvac"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_hvac_watertank"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_smartmeter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_smartmeter_bcontrol"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_smartplug"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xbin_lib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_chp_dachs"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/osh_driver_hvac_heater_gas"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

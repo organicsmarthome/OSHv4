@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://osh/configuration/system"
+	xmlns:tns="http://osh/configuration/system" 
+	elementFormDefault="qualified">
+	
+	<include schemaLocation="includes/DeviceTypes.xsd"></include>
+	<include schemaLocation="includes/ConfigurationParameter.xsd"></include>
+
+
+	<simpleType name="runningType">
+		<restriction base="string">
+			<enumeration value="REAL" />
+			<enumeration value="SIMULATION" />
+			<enumeration value="HIL" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="GridConfig">
+		<sequence>
+			<element name="gridType" type="string"></element>
+			<element name="gridLayoutSource" type="string"></element>
+		</sequence>
+	</complexType>
+	
+	
+	<element name="OSHConfiguration">
+		<complexType>
+			<sequence>
+				<element name="runningType" type="tns:runningType"></element>
+				<element name="randomSeed" type="string"></element>
+				<element minOccurs="0" maxOccurs="unbounded" name="engineParameters"
+					type="tns:ConfigurationParameter"></element>
+				<element name="logFilePath" type="string"></element>
+				<element minOccurs="0" maxOccurs="unbounded" name="gridConfigurations"
+					type="tns:GridConfig"></element>
+				<element name="meterUUID" type="string"></element>
+				<element name="hhUUID" type="string"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>

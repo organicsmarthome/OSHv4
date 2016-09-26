@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+	xmlns:wp="http://osh/configuration/appliance" 
+	targetNamespace="http://osh/configuration/appliance"
+
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified">
+
+
+	<!--included Schema Files -->
+
+	<xs:include schemaLocation="includes/XsdCommonDatatypes.xsd" />
+
+	<!--elements of a Configuration -->
+
+	<xs:complexType name="xsdCt.ConfigurationParameter">
+		<xs:sequence>
+			<xs:element name="ParameterName" type="wp:name" />
+			<xs:element name="ParameterValue" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="xsdCt.ConfigurationParameters">
+		<xs:sequence>
+			<xs:element name="Parameter" type="wp:xsdCt.ConfigurationParameter" minOccurs="0" maxOccurs="255" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!--Program consists of ProgramId and descriptions -->
+
+	<xs:complexType name="xsdCt.Program">
+		<xs:sequence>
+			<xs:element name="ProgramID" type="wp:byte" minOccurs="1" maxOccurs="1" />
+			<xs:element name="ProgramName" type="wp:name" minOccurs="0" maxOccurs="1" />
+			<xs:element name="Descriptions" type="wp:XsdDescriptions" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- one configuration with underlying LoadProfiles (electrical, gas, hot 
+		water, hybrid, ...) -->
+
+	<xs:complexType name="xsdCt.ApplianceProgramConfiguration">
+		<xs:sequence>
+			<xs:element name="ConfigurationID" type="wp:nonNegativeInt" minOccurs="1" maxOccurs="1" />
+			<xs:element name="ConfigurationName" type="wp:name" minOccurs="0" maxOccurs="1" />
+			<!--DIN EN 50523 ProgramConfiguration and description -->
+			<xs:element name="Program" type="wp:xsdCt.Program" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Parameters" type="wp:xsdCt.ConfigurationParameters" minOccurs="0" maxOccurs="1" />
+			<!--underlying LoadProfiles for local O/C Unit -->
+			<xs:element name="LoadProfiles" type="wp:XsdLoadProfiles" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<!-- ############################# -->
+	<!-- ApplianceProgramConfiguration -->
+	<!-- ############################# -->
+
+	<!-- Sequence of all possible configurations of an appliance -->
+
+	<xs:element name="xsdCt.ApplianceProgramConfigurations">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ApplianceProgramConfiguration" type="wp:xsdCt.ApplianceProgramConfiguration" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

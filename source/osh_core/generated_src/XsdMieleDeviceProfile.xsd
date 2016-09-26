@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://osh/configuration/appliance/miele"
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://osh/configuration/appliance/miele">
+	
+	<element name="DeviceProfile">
+		<complexType>
+			<sequence>
+				<element name="deviceUUID" type="string"></element>
+				<element name="deviceType" type="string"></element>
+				<element name="deviceDescription" type="string"></element>
+				<element name="hasProfile" minOccurs="1" maxOccurs="1" type="boolean"></element>
+				<element name="Intelligent" minOccurs="1" maxOccurs="1"
+					type="boolean"></element>
+				<element name="profileTicks" minOccurs="1" maxOccurs="1"
+					type="tns:ProfileTicks"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+	<complexType name="ProfileTicks">
+		<sequence>
+			<element name="profileTick" minOccurs="1" maxOccurs="unbounded"
+				type="tns:ProfileTick"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="ProfileTick">
+		<sequence>
+			<element name="load" minOccurs="1" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="commodity" type="string"></element>
+						<element name="value" type="int"></element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="deviceStateName" type="string"></element>
+			<element name="parameters" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="parameterName"></element>
+						<element name="parameterValue"></element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+
+</schema>

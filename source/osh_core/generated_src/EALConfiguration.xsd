@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://osh/configuration/system"
+	xmlns:tns="http://osh/configuration/system" 
+	elementFormDefault="qualified">
+	
+	<include schemaLocation="includes/DeviceTypes.xsd"></include>
+	<include schemaLocation="includes/ConfigurationParameter.xsd"></include>
+
+
+	<element name="EALConfiguration">
+		<complexType>
+			<sequence>
+				<element name="assignedDevices" type="tns:AssignedDevice"
+					minOccurs="0" maxOccurs="unbounded"></element>
+				<element name="assignedBusDevices" type="tns:AssignedBusDevice"
+					minOccurs="0" maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+
+	<complexType name="AssignedDevice">
+		<sequence>
+			<element name="deviceType" type="tns:DeviceTypes"></element>
+			<element name="deviceClassification" type="tns:DeviceClassification"
+				default="N/A">
+			</element>
+			<element name="deviceDescription" type="string"></element>
+			<element name="driverClassName" type="string"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="driverParameters"
+				type="tns:ConfigurationParameter">
+			</element>
+			<element name="controllable" type="boolean"></element>
+			<element name="observable" type="boolean"></element>
+			<element name="assignedLocalOCUnit" type="tns:AssignedLocalOCUnit">
+			</element>
+		</sequence>
+		<attribute name="deviceID" type="string"></attribute>
+	</complexType>
+
+	<complexType name="AssignedBusDevice">
+		<sequence>
+			<element name="busDeviceID" type="string"></element>
+			<element name="busDeviceType" type="tns:BusDeviceTypes"></element>
+			<element name="busDeviceClassification" type="tns:BusDeviceClassification"></element>
+			<element name="busDeviceDescription" type="string"></element>
+			<element name="busManagerClassName" type="string"></element>
+			<element name="busDriverClassName" type="string"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="busDriverParameters"
+				type="tns:ConfigurationParameter"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="AssignedLocalOCUnit">
+		<sequence>
+			<element name="unitDescription" type="string"></element>
+			<element name="localControllerClassName" type="string"></element>
+			<element name="localObserverClassName" type="string"></element>
+			<element name="localObserverParameters" type="tns:ConfigurationParameter"
+				maxOccurs="unbounded" minOccurs="0"></element>
+			<element name="localControllerParameters" type="tns:ConfigurationParameter"
+				maxOccurs="unbounded" minOccurs="0"></element>
+		</sequence>
+	</complexType>
+
+</schema>

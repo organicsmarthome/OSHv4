@@ -1,0 +1,45 @@
+Required libraries:
+
+* commons
+	* commons-codec-1.4.jar
+	* commons-httpclient-3.1.jar
+	* commons-logging-1.1.1.jar
+	* commons-math3-3.0.jar
+* httpclient
+	* httpclient-4.3.6
+	* httpcore-4.3.3.jar
+* Jackson2
+* JSch
+	* jsch-0.1.53.jar
+* jawampa
+	* jawampa-core-0.4.1.jar
+* javax
+	* javax.persistence-2.1.0.jar
+	* javax.servlet-api-3.1.jar
+* jersey2
+	* jersey-client-2.22.jar
+	* jersey-common-2.22.jar
+	* jersey-container-servlet-core-2.22.jar
+	* jersey-container-servlet-2.22.jar
+	* jersey-media-jaxb-2.22.jar
+	* jersey-server-2.22.jar
+* jetty
+	* jetty-http-9.2.15.v20160210.jar
+	* jetty-io-9.2.15.v20160210.jar
+	* jetty-security-9.2.15.v20160210.jar
+	* jetty-server-9.2.15.v20160210.jar
+	* jetty-servlet-9.2.15.v20160210.jar
+	* jetty-util-9.2.15.v20160210.jar
+* org.eclipse.persistence
+	* org.eclipse.persistence.antlr-2.5.0.jar
+	* org.eclipse.persistence.asm-2.5.0.jar
+	* org.eclipse.persistence.core-2.5.0.jar
+	* org.eclipse.persistence.jpa-2.5.0
+	* org.eclipse.persistence.jpa.jpql-2.5.0.jar
+	* org.eclipse.persistence.moxy-2.5.0.jar
+* misc
+	* fastutil-7.0.13.jar
+	* jcifs-1.3.17.jar
+	* log4j-1.2.16.jar
+	* mysql-connector-java-5.1.21.jar
+	* rrd4j-2.2.jar

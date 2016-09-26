@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://osh/configuration/system"
+	xmlns:tns="http://osh/configuration/system" 
+	elementFormDefault="qualified">
+	
+	<include schemaLocation="includes/DeviceTypes.xsd"></include>
+	<include schemaLocation="includes/ConfigurationParameter.xsd"></include>
+
+
+	<element name="CALConfiguration">
+		<complexType>
+			<sequence>
+				<element name="assignedComDevices" type="tns:AssignedComDevice"
+					minOccurs="0" maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	<complexType name="AssignedComDevice">
+		<sequence>
+			<element name="comDeviceID" type="string"></element>
+			<element name="comDeviceType" type="tns:ComDeviceTypes"></element>
+			<element name="comDeviceClassification" type="tns:ComDeviceClassification"></element>
+			<element name="comDeviceDescription" type="string"></element>
+			<element name="comManagerClassName" type="string"></element>
+			<element name="comDriverClassName" type="string"></element>
+			<element minOccurs="0" maxOccurs="unbounded" name="comDriverParameters"
+				type="tns:ConfigurationParameter"></element>
+		</sequence>
+	</complexType>
+	
+</schema>

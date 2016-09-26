@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://osh/configuration/system" 
+	xmlns:tns="http://osh/configuration/system" 
+	elementFormDefault="qualified">
+	
+	
+	<simpleType name="DeviceTypes">
+		<restriction base="string">
+			<enumeration value="HVAC"></enumeration>
+		
+			<enumeration value="COMBINATIONAPPARATUS"></enumeration>
+		
+			<enumeration value="AIRCONDITION"></enumeration>
+			<enumeration value="FANHEATER"></enumeration>
+		
+			<enumeration value="DISHWASHER"></enumeration>
+			<enumeration value="DRYER"></enumeration>
+			<enumeration value="WASHERDRYER"></enumeration>
+			<enumeration value="WASHINGMACHINE"></enumeration>
+			
+			<enumeration value="ELECTRICOVEN"></enumeration>
+			<enumeration value="ELECTRICSTOVE"></enumeration>
+			<enumeration value="ELECTRICCOOKTOP"></enumeration>
+			<enumeration value="INDUCTIONCOOKTOP"></enumeration>
+			
+			<enumeration value="GASOVEN"></enumeration>
+			<enumeration value="GASSTOVE"></enumeration>
+			<enumeration value="GASCOOKTOP"></enumeration>
+			
+			<enumeration value="COOKERHOOD"></enumeration>
+			<enumeration value="MICROWAVE"></enumeration>
+			<enumeration value="STEAMER"></enumeration>
+			
+			<enumeration value="BREADMAKER"></enumeration>
+			<enumeration value="COFFEESYSTEM"></enumeration>
+			<enumeration value="COFFEEMAKER"></enumeration>
+			
+			<enumeration value="FREEZERREFRIGERATOR"></enumeration>
+			<enumeration value="FREEZER"></enumeration>
+			<enumeration value="REFRIGERATOR"></enumeration>
+			<enumeration value="WINECOOLER"></enumeration>
+			
+			<enumeration value="ELECTRICWATERBOILER"></enumeration>
+			
+			<enumeration value="WATERHEATERINSTANTANEOUS"></enumeration>
+			<enumeration value="WATERHEATERSTORAGE"></enumeration>
+			
+			<enumeration value="LUMINAIRE"></enumeration>
+			
+			<enumeration value="ECAR"></enumeration>
+			<enumeration value="EBIKE"></enumeration>
+			<enumeration value="SEGWAY"></enumeration>
+			
+			<enumeration value="SMARTMETER"></enumeration>
+			
+			<enumeration value="TEMPERATURESENSOR"></enumeration>
+			<enumeration value="GASSENSOR"></enumeration>
+			<enumeration value="SMOKESENSOR"></enumeration>
+			<enumeration value="MOTIONSENSOR"></enumeration>
+			<enumeration value="CONTACTSENSOR"></enumeration>
+			
+			<!-- Smart Plugs -->
+			<enumeration value="METERPLUG"></enumeration>
+			<enumeration value="SWITCHPLUG"></enumeration>
+			<enumeration value="METERSWITCHPLUG"></enumeration>
+			
+			<enumeration value="VIRTUALSWITCH"></enumeration>
+			
+			<enumeration value="CHPPLANT"></enumeration>
+			<enumeration value="PVSYSTEM"></enumeration>
+			
+			<enumeration value="HEATPUMP"></enumeration>
+			
+			<enumeration value="IR"></enumeration>
+			
+			<enumeration value="BASELOAD"></enumeration>
+			
+			<enumeration value="HOUSEHOLD"></enumeration>
+			
+			<enumeration value="HOTWATERSTORAGE"></enumeration>
+			<enumeration value="COLDWATERSTORAGE"></enumeration>
+			
+			<enumeration value="ADSORPTIONCHILLER"></enumeration>
+			
+			<enumeration value="SPACECOOLING"></enumeration>
+			<enumeration value="SPACEHEATING"></enumeration>
+			
+			<enumeration value="OTHER"></enumeration>
+			
+			<enumeration value="BATTERYSTORAGE"></enumeration>
+			<enumeration value="GASHEATING"></enumeration>
+			
+			<enumeration value="INSERTHEATINGELEMENT"></enumeration>
+			<enumeration value="DOMESTICHOTWATER"></enumeration>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="DeviceClassification">
+		<restriction base="string">
+			<enumeration value="HVAC"></enumeration>
+			
+			<enumeration value="APPLIANCE"></enumeration>
+			
+			<enumeration value="LUMINAIRE"><!-- Beleuchtung --></enumeration>
+			
+			<enumeration value="ELECTRICVEHICLE"></enumeration>
+			
+			<enumeration value="METERING"></enumeration>
+			
+			<enumeration value="SENSOR"></enumeration>
+			
+			<enumeration value="SMARTPLUG"></enumeration>
+			
+			<enumeration value="VIRTUALSWITCH"></enumeration>
+			
+			<enumeration value="CHPPLANT"></enumeration>
+			<enumeration value="PVSYSTEM"></enumeration>
+			
+			<enumeration value="HEATPUMP"></enumeration>
+			
+			<enumeration value="BASELOAD"></enumeration>
+			
+			<enumeration value="REMOTECONTROL"></enumeration>
+			
+			<enumeration value="CUSTOMER"></enumeration>
+			
+			<enumeration value="OTHER"></enumeration>
+			
+			<enumeration value="BATTERYSTORAGE"></enumeration>
+			
+			<enumeration value="N/A"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="ComDeviceTypes">
+		<restriction base="string">
+			<enumeration value="USERINTERACTIONDEVICE"></enumeration>
+			<enumeration value="GUI"></enumeration>
+			
+			<enumeration value="MULTI_COMMODITY"></enumeration>
+			<enumeration value="ELECTRICITY"></enumeration>
+			<enumeration value="GAS"></enumeration>
+			<enumeration value="WATER"></enumeration>
+			<enumeration value="SEWAGE"></enumeration>
+			
+			<enumeration value="GENERALLOGGER"></enumeration>
+			<enumeration value="FILELOGGER"></enumeration>
+			<enumeration value="DATABASELOGGER"></enumeration>
+			
+			<enumeration value="OTHER"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="ComDeviceClassification">
+		<restriction base="string">
+			<enumeration value="USERINTERACTION"></enumeration>
+			<enumeration value="UTILITY"></enumeration>
+			<enumeration value="LOGGER"></enumeration>
+			
+			<enumeration value="OTHER"></enumeration>
+		</restriction>
+	</simpleType>
+
+
+	<simpleType name="BusDeviceTypes">
+		<restriction base="string">
+			<enumeration value="CHILLIICONTROLLER"></enumeration>
+			<enumeration value="EEBUSGATEWAY"></enumeration>
+			<enumeration value="HABITEQGATEWAY"></enumeration>
+			<enumeration value="HAGERGATEWAY"></enumeration>
+			<enumeration value="MIELEGATEWAY"></enumeration>
+			<enumeration value="PLUGWISEGATEWAY"></enumeration>
+			<enumeration value="WAGO750-860"></enumeration>
+			<enumeration value="FILELOGGER"></enumeration>
+			<enumeration value="OTHER"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="BusDeviceClassification">
+		<restriction base="string">
+			<enumeration value="GATEWAY"></enumeration>
+			<enumeration value="BUSCONTROLLER"></enumeration>
+		</restriction>
+	</simpleType>
+
+</schema>
