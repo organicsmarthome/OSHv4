@@ -18,17 +18,20 @@ It aims at realizing a mostly self-organizing and automated energy management sy
 * Eclipse Mars+
 
 
-## Project Overview
+## Overview
 
-* TODO
-
+* <b>source</b> : source code of the Organic Smart Home
+* <b>source/osh_sim_builder</b> : OSH tools for the generation of XML configuration files (simulation mode) 
+  * <code>constructSimulationPackage</code> : OSH configuration file generator
+* <b>source/osh_sim_loader</b> : OSH in simulation mode
+  * <code>runSimulationPackage</code> : OSH simulation launcher (simulation mode)
 
 ## Contact and Main Contributors
 
 * Kaibin Bao (bao@kit.edu)
 * Sebastian Kochanneck (kochanneck@kit.edu)
 * Sebastian Kramer
-* Ingo Mauser (mauser@kit.edu) - Main contact
+* Ingo Mauser (mauser@kit.edu) - <b>main contact</b>
 * Jan Müller (jan.mueller@kit.edu)
 
 
@@ -50,6 +53,25 @@ Ingo Mauser, Jan Müller, Florian Allerding, Hartmut Schmeck: <br />
 "Adaptive Building Energy Management with Multiple Commodities and Flexible Evolutionary Optimization", <br />
 Renewable Energy, 87, Part 2, p.911-921, 2016. <br />
 http://www.sciencedirect.com/science/article/pii/S0960148115302834
+
+
+## Citing
+
+If you use the Organic Smart Home in your research, please consider citing:
+
+<pre><code>
+@Article{mauser2016adaptive,
+  Title                    = {{Adaptive Building Energy Management with Multiple Commodities and Flexible Evolutionary Optimization}},
+  Author                   = {Ingo Mauser and Jan M{\"u}ller and Florian Allerding and Hartmut Schmeck},
+  Journal                  = {Renewable Energy},
+  Year                     = {2016},
+  Pages                    = {911 - 921},
+  Volume                   = {87, Part 2},
+  Doi                      = {10.1016/j.renene.2015.09.003},
+  ISSN                     = {0960-1481},
+  nolanguage = {English}
+}
+</code></pre>
 
 
 ## License
