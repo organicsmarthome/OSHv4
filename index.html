@@ -54,10 +54,39 @@ Copyright (C) 2016</p>
 </ul>
 
 <h2>
-<a id="project-overview" class="anchor" href="#project-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Overview</h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h2>
 
 <ul>
-<li>TODO</li>
+<li>
+<b>source</b> : source code of the Organic Smart Home</li>
+<li>
+<b>source/osh_sim_builder</b> : OSH tools for the generation of XML configuration files (simulation mode) 
+
+<ul>
+<li>
+<code>constructSimulationPackage</code> : OSH configuration file generator</li>
+</ul>
+</li>
+<li>
+<b>source/osh_sim_loader</b> : OSH in simulation mode
+
+<ul>
+<li>
+<code>runSimulationPackage</code> : OSH simulation launcher (simulation mode)</li>
+</ul>
+</li>
+<li>
+<b>source/osh_core</b> : core components of the OSH (e.g. generic components of the Observer/Controller architecture, Communication Registries, Energy Simulation Core)</li>
+<li>
+<b>source/osh_ems_ea</b> : components of the optimization layer (partly based on <a href="https://github.com/jMetal/jMetal">jMetal 4.x</a>)</li>
+<li>
+<b>source/osh_busdriver<em></em></b> : bus drivers (Miele XGW2000 gateway, BacNet, EnOcean, WAGO 750-820)</li>
+<li>
+<b>source/osh_comdriver*</b> : communication drivers (user interaction, logging, REST service, external signals, weather prediction)</li>
+<li>
+<b>source/osh_driver*</b> : device drivers (home appliances, baseload, battery storage, microCHP, HVAC, PV system, smart meter)</li>
+<li>
+<b>source/xbin_lib</b> : required libraries (not provided, please see README for list of libraries)</li>
 </ul>
 
 <h2>
@@ -67,7 +96,8 @@ Copyright (C) 2016</p>
 <li>Kaibin Bao (<a href="mailto:bao@kit.edu">bao@kit.edu</a>)</li>
 <li>Sebastian Kochanneck (<a href="mailto:kochanneck@kit.edu">kochanneck@kit.edu</a>)</li>
 <li>Sebastian Kramer</li>
-<li>Ingo Mauser (<a href="mailto:mauser@kit.edu">mauser@kit.edu</a>) - Main contact</li>
+<li>Ingo Mauser (<a href="mailto:mauser@kit.edu">mauser@kit.edu</a>) - <b>main contact</b>
+</li>
 <li>Jan Müller (<a href="mailto:jan.mueller@kit.edu">jan.mueller@kit.edu</a>)</li>
 </ul>
 
@@ -92,11 +122,30 @@ Renewable Energy, 87, Part 2, p.911-921, 2016. <br>
 <a href="http://www.sciencedirect.com/science/article/pii/S0960148115302834">http://www.sciencedirect.com/science/article/pii/S0960148115302834</a></p>
 
 <h2>
+<a id="citing" class="anchor" href="#citing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Citing</h2>
+
+<p>If you use the Organic Smart Home in your research, please consider citing:</p>
+
+<pre><code>
+@Article{mauser2016adaptive,
+  Title                    = {{Adaptive Building Energy Management with Multiple Commodities and Flexible Evolutionary Optimization}},
+  Author                   = {Ingo Mauser and Jan M{\"u}ller and Florian Allerding and Hartmut Schmeck},
+  Journal                  = {Renewable Energy},
+  Year                     = {2016},
+  Pages                    = {911 - 921},
+  Volume                   = {87, Part 2},
+  Doi                      = {10.1016/j.renene.2015.09.003},
+  ISSN                     = {0960-1481},
+  nolanguage = {English}
+}
+</code></pre>
+
+<h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>The Organic Smart Home is licensed under the GPL. </p>
 
-<p>If you have licensed this product under the GPL, please see the COPYING file for more information and the GPL version. </p>
+<p>If you have licensed this product under the GPL, please see the LICENSE file for more information and the GPL version. </p>
       </section>
     </div>
 
