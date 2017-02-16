@@ -35,6 +35,13 @@ It aims at realizing a mostly self-organizing and automated energy management sy
 * <b>source/xbin_lib</b> : required libraries (not provided, please see README for list of libraries)
 
 
+## How 2 Use
+
+* Check out
+* Get libraries, see <b>source/xbin_lib/README.md</b>
+* Run <code>runSimulationPackage</code> in <b>source/osh_sim_loader</b>
+
+
 ## Contact and Main Contributors
 
 * Kaibin Bao (bao@kit.edu)
