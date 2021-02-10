@@ -47,7 +47,7 @@ It aims at realizing a mostly self-organizing and automated energy management sy
 * Kaibin Bao (bao@kit.edu)
 * Sebastian Kochanneck (kochanneck@kit.edu)
 * Sebastian Kramer
-* Ingo Mauser (mauser@kit.edu) - <b>main contact</b>
+* Ingo Mauser <s>(mauser@kit.edu)</s> (ingomauser@gmail.com) - <b>main contact</b>
 * Jan Müller (jan.mueller@kit.edu)
 
 
