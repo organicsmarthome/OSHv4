@@ -11,6 +11,9 @@ The building energy management system is based on the Extended Observer/Controll
 
 It aims at realizing a mostly self-organizing and automated energy management system, reducing the need for interaction between the users (e.g., occupants) and the building's devices and systems (e.g., appliances, distributed generation, and building energy management system). However, the system still allows for explicit interference--if desired--and the users remain always in the loop.
 
+### Warning
+
+This is a scientific prototype. For security reasons, please consider updating all dependencies before usage.
 
 ## Technical Information
 
